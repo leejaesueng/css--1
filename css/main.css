@@ -1,0 +1,112 @@
+/* reset */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    color: #000;
+}
+
+/* common */
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* header style */
+.header {
+    background: #383838;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+.header .gtn {
+    float: left;
+}
+.header .gtn a {
+    padding: 0 10px;
+    color: #aaa;
+    border-right: 1px solid #fff;
+}
+.header .gtn a:nth-child(2) {
+    color: #fff;
+}
+.header .gtn a:last-child {
+    border-right: none;
+}
+.header .gtn a:hover {
+    color: #fff;
+}
+.header .tbn {
+    float: right;
+}
+.header .tbn a {
+    display: block;
+    float: left;
+    font-size: 35px;
+    margin-right: 20px;
+    line-height: 55px;
+}
+/* header style */
+
+body {
+    background: rgba(255, 255, 255, 0.363);
+}
+.main {
+    width: 50%;
+    margin: 100px auto 0;
+    font-size: 18px;
+    color: #383838;
+}
+.main a:hover {
+    color: rgb(54, 238, 198);
+}
+.main .h {
+    font-size: 30px;
+}
+.main .title .ti {
+    font-size: 14px;
+    padding: 0 0 20px 0 ;
+}
+.main .title i {
+    font-size: 30px;
+    margin-right: 10px;
+    float: left;
+}
+.main .first {
+    margin-bottom: 50px;
+}
+.main .head {
+    /* background: red; */
+    width: 100px;
+    height: 100px;
+}
+.main .title {
+    border: 1px solid #aaa;
+    padding: 30px;
+    position: relative;
+}
+.main .title button {
+    position: absolute;
+    font-size: 20px;
+    background: none;
+
+    left: 95%;
+    top: 15%;
+}
+.main .title h1 {
+    margin-bottom: 20px;
+}
+.main .title .pont {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 80px;
+}
