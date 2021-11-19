@@ -17,8 +17,6 @@ input {
     display: block;
     clear: both;
 }
-
-/* header style */
 .header {
     background: #383838;
     width: 100%;
@@ -37,7 +35,7 @@ input {
     color: #aaa;
     border-right: 1px solid #fff;
 }
-.header .gtn a:nth-child(2) {
+.header .gtn a:nth-child(3) {
     color: #fff;
 }
 .header .gtn a:last-child {
@@ -57,73 +55,49 @@ input {
     line-height: 55px;
 }
 /* header style */
-
-
-body {
-    /* background: rgba(255, 255, 255, 0.363); */
+section.main {
+    background: url(/img/1..jpeg) no-repeat center 70px / cover;
+    background-attachment: fixed;
+    height: 100vh;
     position: relative;
 }
-.main {
+section.main .title {
     width: 50%;
-    margin: 100px auto 0;
-    font-size: 18px;
-    color: #383838;
+    color: rgb(15, 17, 22);
+    position: absolute;
+    left: 12%;
+    top: 19%;
+    transform: translate(0%, 0%);
+    text-align: center;
+    animation: uprising 2s;
+    text-shadow: 2px 2px 3px;
 }
-.warp {
-    position: relative;
-}
-.warp .tema-img {
-    position: fixed;
-    top: 15%;
-    left: 80%;
-    height: 400px;
-    width: 300px;
-    border-radius: 50%;
-    background: url('/img/3..jpg') no-repeat center / cover;
-}
-.main .pont:hover {
-    color: #000;
+section.main .title a h1 {
+    background: none;
+    padding: 30px 0;
+    font-size: 100px;
     font-weight: 700;
 }
-.main a:hover {
+section.main .title:hover {
     color: rgb(54, 238, 198);
 }
-.main .h {
-    font-size: 30px;
+@keyframes uprising {
+    0% {
+        left: -50%;
+        opacity: 0;
+    }
+    100% {
+        left: 12%;
+        opacity: 1;
+    }
 }
-.main .title .ti {
-    font-size: 14px;
-    padding: 0 0 20px 0 ;
-}
-.main .title i {
-    font-size: 30px;
-    margin-right: 10px;
-    float: left;
-}
-.main .first {
-    margin-bottom: 50px;
-}
-.main .head {
-    /* background: red; */
-    width: 100px;
-    height: 100px;
-}
-.main .title {
-    border: 1px solid #aaa;
-    padding: 30px;
-    position: relative;
-}
-.main .title button {
-    position: absolute;
-    font-size: 20px;
+section.main .title p {
     background: none;
+    font-size: 30px;
+    padding: 10px 0;
+    font-weight: 500;
+}
 
-    left: 95%;
-    top: 10%;
-}
-.main .title h1 {
-    margin-bottom: 20px;
-}
 /* footer */
 footer {
     width: 100%;
